@@ -17,7 +17,6 @@ def init_db():
     ''')
     conn.commit()
     conn.close()
-
 # 画像保存関数
 def save_image(file):
     if not os.path.exists('assets/img'):
@@ -66,6 +65,7 @@ def main(page: ft.Page):
             page.update()
 
     # UI要素の定義
+    # ああああ
     upload = ft.FilePicker(on_result=on_result)
     page.overlay.append(upload)
 

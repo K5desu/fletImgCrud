@@ -63,7 +63,7 @@ def main(page: ft.Page):
             # 画像リストを更新
             image_list.controls = [ft.Image(src=img[2], width=100, height=100) for img in get_images()]
             page.update()
-
+   # UI要素の定義
     # UI要素の定義
     # ああああ
     upload = ft.FilePicker(on_result=on_result)
